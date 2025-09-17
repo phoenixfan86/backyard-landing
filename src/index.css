@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+body {
+	list-style: none;
+	@apply px-5 py-4 md:px-8 md:py-5 lg:px-21 lg:py-5;
+}
+
+.mainLogo {
+	@apply flex gap-[7px] items-center text-(--color-01) text-[17px] font-[Gilroy] font-[600];
+}
+
+.link {
+	@apply px-[13px] py-[11px] rounded-full text-(--color-04) hover:text-(--color-07) hover:bg-(--bg-04) active:text-(--color-08);
+}
+
+.chosen {
+	@apply text-(--color-06) bg-(--color-02);
+}
+
+.btn {
+	@apply flex items-center justify-center px-[13px] py-[9px] rounded-full font-[Archivo] font-[600] text-(--color-12) hover:text-(--color-12) bg-(--color-02) hover:bg-(--bg-05) active:text-(--color-08);
+}
+
+.btn_primary {
+	@apply md:w-[329px] tracking-[0.02em] backdrop-blur-xs hover:bg-(--color-03) hover:text-(--color-16) active:text-(--color-17);
+}
+
+.btn_secondary {
+	@apply md:px-[62px] bg-(--bg-06) hover:bg-(--bg-07) text-(--color-14) hover:text-(--color-15) active:bg-(--bg-08) active:text-(--color-14) backdrop-blur-xs;
+}
+
+h1 {
+	@apply font-[Archivo] font-[600] text-[58px] md:text-7xl text-(--color-02);
+}
+
+h3 {
+	@apply font-[Gilroy] font-[600] text-(--color-13) text-xl;
+}
