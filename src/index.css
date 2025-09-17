@@ -1,8 +1,7 @@
 @import 'tailwindcss';
 
 body {
-	list-style: none;
-	@apply px-5 py-4 md:px-8 md:py-5 lg:px-21 lg:py-5;
+	@apply px-5 py-4 md:px-8 md:py-5 lg:px-21 lg:py-5 bg-(--bg-01);
 }
 
 .mainLogo {
@@ -26,13 +25,35 @@ body {
 }
 
 .btn_secondary {
-	@apply md:px-[62px] bg-(--bg-06) hover:bg-(--bg-07) text-(--color-14) hover:text-(--color-15) active:bg-(--bg-08) active:text-(--color-14) backdrop-blur-xs;
+	@apply px-[18px] md:px-[62px] bg-(--bg-06) hover:bg-(--bg-07) text-(--color-14) hover:text-(--color-15) active:bg-(--bg-08) active:text-(--color-14) backdrop-blur-xs;
 }
 
 h1 {
 	@apply font-[Archivo] font-[600] text-[58px] md:text-7xl text-(--color-02);
 }
 
+h2 {
+	@apply font-[Archivo] font-[700] text-[28px] md:text-5xl text-(--color-02);
+}
+
 h3 {
 	@apply font-[Gilroy] font-[600] text-(--color-13) text-xl;
+}
+
+h4 {
+	@apply font-[Archivo] font-[800] md:text-lg text-(--bg-10);
+}
+
+.swiper-pagination {
+	@apply !static !text-left pl-[31px] pt-3;
+}
+
+.swiper-pagination-bullet {
+	@apply !w-7 !h-1 !rounded-[2px] !bg-(--bg-11);
+	/*width: 30px;      /* довжина лінії */
+	/*height: 4px;      /* товщина лінії */
+	/*border-radius: 2px; /* закруглені краї */
+	/*background-color: rgba(255,255,255,0.3); /* сірий колір */
+	/*opacity: 1;
+   /*margin: 0 4px !important; /* відстань між лініями */
 }

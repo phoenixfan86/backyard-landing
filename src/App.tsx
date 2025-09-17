@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="flex flex-col gap-[146px]">
+      <main className="flex flex-col gap-[67px] md:gap-[146px]">
         <About />
         <Whatis />
       </main>
