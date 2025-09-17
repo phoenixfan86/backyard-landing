@@ -50,10 +50,4 @@ h4 {
 
 .swiper-pagination-bullet {
 	@apply !w-7 !h-1 !rounded-[2px] !bg-(--bg-11);
-	/*width: 30px;      /* довжина лінії */
-	/*height: 4px;      /* товщина лінії */
-	/*border-radius: 2px; /* закруглені краї */
-	/*background-color: rgba(255,255,255,0.3); /* сірий колір */
-	/*opacity: 1;
-   /*margin: 0 4px !important; /* відстань між лініями */
 }
