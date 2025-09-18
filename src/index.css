@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 body {
-	@apply px-5 py-4 md:px-8 md:py-5 lg:px-21 lg:py-5 bg-(--bg-01);
+	@apply px-5 py-4 md:px-8 md:py-5 lg:px-16 lg:py-5 2xl:px-[275px] bg-(--bg-01);
 }
 
 .mainLogo {
@@ -9,7 +9,7 @@ body {
 }
 
 .link {
-	@apply px-[13px] py-[11px] rounded-full text-(--color-04) hover:text-(--color-07) hover:bg-(--bg-04) active:text-(--color-08);
+	@apply px-[13px] py-[8px] flex items-center rounded-full text-(--color-04) hover:text-(--color-07) hover:bg-(--bg-04) active:text-(--color-08);
 }
 
 .chosen {
@@ -29,19 +29,23 @@ body {
 }
 
 h1 {
-	@apply font-[Archivo] font-[600] text-[58px] md:text-7xl text-(--color-02);
+	@apply font-[Archivo] font-[600] text-[58px] md:text-5xl lg:text-7xl 2xl:text-[90px] leading-[1.1] text-(--color-02);
 }
 
 h2 {
-	@apply font-[Archivo] font-[700] text-[28px] md:text-5xl text-(--color-02);
+	@apply font-[Archivo] font-[700] text-[28px] md:text-[42px] 2xl:text-5xl text-(--color-02);
 }
 
 h3 {
-	@apply font-[Gilroy] font-[600] text-(--color-13) text-xl;
+	@apply font-[Gilroy] font-[600] text-(--color-13) text-xl md:text-base 2xl:text-2xl;
 }
 
 h4 {
 	@apply font-[Archivo] font-[800] md:text-lg text-(--bg-10);
+}
+
+.swiper-slide {
+	@apply !flex;
 }
 
 .swiper-pagination {

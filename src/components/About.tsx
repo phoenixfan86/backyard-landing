@@ -4,8 +4,8 @@ const About = () => {
       <div className="md:flex items-center justify-between">
         <div className="md:flex flex-col gap-4">
           <div className="w-full flex gap-4">
-            <div className="">
-              <h1 className="leading-[1.1]">The yield-backed
+            <div className="flex-[7]">
+              <h1 className="">The yield-backed
                 stablecoin protocol
                 boosting DeFi <img
                   src="./img/img_1.png"
@@ -14,7 +14,7 @@ const About = () => {
                 />{" "}liquidity</h1>
               <h3 className="mt-[14px]">Keep your yield working for you — we keep your liquidity accessible</h3>
             </div>
-            <div className="hidden md:flex md:flex-1/2 items-baseline md:py-12 md:px-11 justify-end">
+            <div className="hidden md:flex flex-[3] items-baseline md:p-2 justify-end">
               <img src="./img/img_1.png" alt="img_1" className="" />
             </div>
           </div>

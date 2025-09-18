@@ -28,28 +28,34 @@ const Whatis = () => {
   return (
     <section className="">
       <h2>What is Backyard?</h2>
-      <div className=" md:flex gap-[78px] items-end pt-5">
+      <div className="flex gap-[78px] items-end pt-5">
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={1}
-          className="md:hidden"
+          breakpoints={{
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="md:hidden min-h-[430px]"
         >
           {whatIsItems.map((item, i) => (
-            <SwiperSlide key={i}>
-              <div className="flex-1 flex-col items-center">
-                <div className="h-50 relative
+            <SwiperSlide key={i} className="">
+              <div className="flex md:gap-[53px] flex-col md:flex-row-reverse lg:flex-col items-center justify-between">
+                <div className="size-45 md:size-64 lg:size-48 
              flex items-center justify-center">
-                  <img src={item.img} alt={item.title} className="absolute -bottom-6" />
+                  <img src={item.img} alt={item.title} className="size-full" />
                 </div>
-                <div className="flex items-center gap-[34px] py-3 px-[13px] rounded-[45px] bg-(--bg-09) backdrop-blur-xs">
-                  <span className="size-[33px] flex items-center justify-center font-[Archivo] font-[600] text-(--color-06) rounded-full bg-(--bg-10)">{i + 1}</span>
-                  <span className="font-[Gilroy] font-[600]  text-xl text-(--color-02)">{item.title}</span>
-                </div>
-                <div className="py-[30px] px-8 mt-[15px] rounded-[31px] bg-(--bg-09) backdrop-blur-xs">
-                  <h4>{item.sub_title}</h4>
-                  <p className="font-[Gilroy] text-sm text-(--color-18)">{item.description}</p>
+                <div className="flex  flex-col justify-between">
+                  <div className="flex items-center gap-[34px] md:gap-[72px] lg:gap-[34px] py-3 px-[13px] rounded-[45px] bg-(--bg-09) backdrop-blur-xs">
+                    <span className="size-[33px] flex items-center justify-center font-[Archivo] font-[600] text-(--color-06) rounded-full bg-(--bg-10)">{i + 1}</span>
+                    <span className="font-[Gilroy] font-[600]  text-xl text-(--color-02)">{item.title}</span>
+                  </div>
+                  <div className="min-h-38 py-[30px] px-8 mt-[15px] rounded-[31px] bg-(--bg-09) backdrop-blur-xs">
+                    <h4>{item.sub_title}</h4>
+                    <p className="font-[Gilroy] text-sm text-(--color-18) mt-[11px]">{item.description}</p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
