@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Whatis from "./components/Whatis";
 
 function App() {
